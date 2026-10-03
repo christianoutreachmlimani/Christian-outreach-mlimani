@@ -4,7 +4,7 @@
   "scripts": {
     "setup": "npm --prefix site install",
     "dev": "npm --prefix site run dev",
-    "build": "npm --prefix site run build",
+    "build": "node scripts/ensure-site-deps.cjs && npm --prefix site run build",
     "start": "npm --prefix site run start",
     "deploy": "npm --prefix site run deploy"
   }
