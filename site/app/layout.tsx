@@ -13,5 +13,10 @@ export const metadata: Metadata = {
 export const viewport: Viewport = { themeColor: "#513965" };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body><Header />{children}<Footer /></body></html>;
+  return <html lang="en"><body>
+    <div className="site-opening" aria-hidden="true">
+      <div className="site-opening-mark"><img src="/church-logo-small.webp" width="88" height="88" alt="" /><strong>Christian Outreach</strong><span>WELCOME HOME</span></div>
+    </div>
+    <Header />{children}<Footer />
+  </body></html>;
 }

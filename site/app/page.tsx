@@ -7,20 +7,7 @@ import { HeroCarousel } from "@/components/hero-carousel";
 export default function Home() {
   return <main id="main-content">
     <section className="home-hero">
-      <div className="container home-hero-grid">
-        <div className="hero-copy">
-          <span className="welcome-pill"><span /> A CHURCH. A FAMILY. A PLACE FOR YOU.</span>
-          <h1>Rooted in faith.<br />Growing in love.<br /><em>Together in Christ.</em></h1>
-          <p>Life is better when we walk together. Discover a welcoming church family in Mlimani, where we worship, grow, and share the love of Jesus.</p>
-          <div className="button-row"><Link className="button button-orange" href="/contact">Plan your visit <Icon name="arrow" /></Link><Link className="watch-link" href="/watch"><span className="play-circle"><Icon name="play" /></span> Watch & connect</Link></div>
-          <div className="hero-location"><Icon name="pin" /><span>Mlimani, Kakamega County, Kenya</span></div>
-        </div>
-        <div className="hero-visual">
-          <HeroCarousel />
-          <div className="hero-photo-caption"><span className="caption-line" /> ONE FAITH. ONE FAMILY. ONE PURPOSE.</div>
-          <Link className="sunday-float" href="/programs"><span className="float-icon"><Icon name="calendar" /></span><span><small>THERE’S A SEAT FOR YOU</small><strong>See you this Sunday</strong><span>Worship from 8:00 AM · Main service at noon</span></span><Icon name="up-right" /></Link>
-        </div>
-      </div>
+      <HeroCarousel />
     </section>
     <section className="quick-section" aria-label="Your next step"><div className="container quick-grid">
       <Link href="/contact" className="quick-card"><span className="quick-icon peach"><Icon name="heart" /></span><div><h2>New here? Welcome home.</h2><p>Everything you need for your first visit.</p></div><Icon name="up-right" /></Link>
