@@ -18,7 +18,12 @@ Use case: logo-brand restoration. Edit target: attached existing Christian Outre
 
 - Original: `../public/worship-hero.png`
 - Optimized website image: `../public/worship-hero.webp` (about 141 KB)
-- This generated image is an atmospheric illustration, not a photograph of the actual Mlimani congregation. Its alternative text identifies it as an illustration. Real portraits remain in leadership and gallery sections.
+- This generated image was previously used in the homepage hero. It has been replaced there by two user-supplied photos of actual church services and remains only as an unused reference asset.
+
+## Homepage photo carousel
+
+- `../public/church-service.webp` shows church leaders speaking at the pulpit; `../public/church-worship.webp` shows the worship team leading praise.
+- Both were supplied by the user on October 3, 2026 and compressed to WebP without retouching. The homepage slides between them automatically and also provides manual controls.
 
 Prompt:
 

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { church } from "@/lib/content";
 import { Callout, MinistryGrid, Schedule, SectionHeading } from "@/components/shared";
 import { Icon } from "@/components/icon";
+import { HeroCarousel } from "@/components/hero-carousel";
 
 export default function Home() {
   return <main id="main-content">
@@ -15,7 +16,7 @@ export default function Home() {
           <div className="hero-location"><Icon name="pin" /><span>Mlimani, Kakamega County, Kenya</span></div>
         </div>
         <div className="hero-visual">
-          <img className="hero-photo" src="/worship-hero.webp" width="1536" height="1024" alt="Illustration of a congregation gathered in warm light for worship" fetchPriority="high" />
+          <HeroCarousel />
           <div className="hero-photo-caption"><span className="caption-line" /> ONE FAITH. ONE FAMILY. ONE PURPOSE.</div>
           <Link className="sunday-float" href="/programs"><span className="float-icon"><Icon name="calendar" /></span><span><small>THERE’S A SEAT FOR YOU</small><strong>See you this Sunday</strong><span>Worship from 8:00 AM · Main service at noon</span></span><Icon name="up-right" /></Link>
         </div>
